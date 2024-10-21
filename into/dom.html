@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+        <div>
+            <!-- <label for="email" id="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required> -->
+            <br><br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id=" password" required>
+            <br><br>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id=" rpt_password"
+                onkeyup="check(this)" required>
+            <error id="alert"></error>
+            <br><br><br>
+
+            <div>
+                <button id="signup" type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+    <script>
+
+        var btn, password, password2;
+
+        btn = document.getElementById("signup");
+        password = document.getElementById("password");
+        password2 = document.getElementById("rpt_password");
+
+        if (password == password2) {
+            console.log(password2);
+        }
+        else {
+            alert("error");
+        }
+
+
+    </script>
+</body>
+
+</html>

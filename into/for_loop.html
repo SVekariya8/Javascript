@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+// external input
+
+var i,n;
+n=parseInt(prompt("enter value"));
+for(i=1; i<=n;i++){
+    console.log("hello");
+}
+
+// external input
+
+var i,n;
+i=parseInt(prompt("enter starting value"));
+n=parseInt(prompt("enter endinging value"));
+
+for(i; i<=n;i++){
+    console.log("hello");
+}
+
+// multiplication
+
+var i,n, sum;
+n=parseInt(prompt("enter value"));
+sum=1;
+for(i=1; i<=n;i++){
+    sum=sum*i; 
+    console.log(sum);
+}
+
+// multiplication
+
+var i,n, sum;
+n=parseInt(prompt("enter value"));
+sum=0;
+for(i=1; i<=n;i++){
+    sum=sum+i;
+    console.log(sum);
+}
+
+var i,n,a;
+n=parseInt(prompt("enter value"));
+
+for(i=1; i<=n;i++){
+    if(i%2 != 0){
+        console.log(i);
+    }    
+    else{}
+    
+}
+
+//even no
+
+var i,n,a;
+n=parseInt(prompt("enter value"));
+
+for(i=1; i<=n;i++){
+    if(i%2 == 0){
+        console.log(i);
+    }    
+    else{}
+
+// qube no.
+
+var i,n,a;
+n=parseInt(prompt("enter value"));
+
+for(i=1; i<=n;i++){
+    a=i*i*i;
+        console.log(a);
+}
+
+// table of 5 no.
+
+var i,result;
+const a=5;
+
+for(i=1; i<=10;i++){
+    result=i*a;
+        console.log(a + "*", i + "=" , result);
+      
+}
+
+// armstrong no.
+
+var i,n,result,sum,x;
+n=parseInt(prompt("enter value"));
+var temp=n;
+var sum=0;
+while(temp>0){
+    x= temp%10;
+    sum= sum + x**3;
+    temp=parseInt(temp/10);
+}
+if (sum==n){
+    console.log(n + " - armstrong no.");
+}
+else{
+    console.log(n + " - not armstrong no.");
+}
+    
+
+
+// Palindrom no.
+
+var i,n,temp,sum,x;
+n=parseInt(prompt("enter value"));
+
+temp=n;
+sum=0;
+while(temp != 0){
+    x= temp%10;
+    sum= (sum*10)+x;
+    temp=parseInt(temp/10);
+}
+if (n==sum){
+    console.log(n + " - Palindrome no");
+}
+else{
+    console.log(n+ " - not Palindrome no.");
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

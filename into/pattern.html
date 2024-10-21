@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+
+<body>
+
+    <script>
+
+        // square
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= n; k++) {
+                document.write("&nbsp" + "*");
+            }
+            document.write("<br>");
+        }
+
+        // rectangle
+
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= n * 2; k++) {
+                document.write("&nbsp" + "*");
+            }
+            document.write("<br>");
+        }
+
+        // rectangle
+
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = 1; i <= 2; i++) {
+            for (i = 1; i <= n * 2; i++) {
+                for (k = 1; k <= n; k++) {
+                    document.write("&nbsp" + "*");
+                }
+                document.write("<br>");
+            }
+            document.write("<br>");
+        }
+
+        // 90degree Triangle
+
+        var i, n, k;
+        n = prompt(" enter value:");
+
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= i; k++) {
+                document.write("&nbsp" + "*");
+            }
+            document.write("<br>");
+        }
+
+        // 90 degree reverse Triangle
+
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = n; i >= 1; i--) {
+            for (k = 1; k <= i; k++) {
+                document.write("&nbsp" + "*");
+            }
+            document.write("<br>");
+        }
+
+        // pyramid Triangle
+
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("&nbsp" + "*");
+            }
+            document.write("<br>");
+        }
+
+        // reverse pyramid
+        var i, k, n;
+        n = prompt(" enter value:");
+        for (i = n; i >= 1; i--) {
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("*" + "&nbsp");
+            }
+            document.write("<br>");
+        }
+
+
+        //   Hourglass pattern
+
+        var i, n, k;
+        n = prompt(" enter value:");
+        for (i = n; i >= 1; i--) {
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("*" + "&nbsp");
+            }
+            document.write("<br>");
+        }
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("*" + "&nbsp");
+            }
+            document.write("<br>");
+        }
+
+        //   Diamond pattern
+
+        var i, n, k;
+         n = prompt(" enter value:");
+
+        for (i = 1; i <= n; i++) {
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("*" + "&nbsp");
+            }
+            document.write("<br>");
+        }
+        for (i = n; i >= 1; i--) {
+
+            for (k = 1; k <= n - i; k++) {
+                document.write("&nbsp");
+            }
+            for (k = 1; k <= i; k++) {
+                document.write("*" + "&nbsp");
+            }
+            document.write("<br>");
+        }
+ // rhs triangle same as pyramid
+ var i, k ,n;
+ n = 7;
+for (i = 1; i<=n ; i++) {
+     for ( k = i; k<=n; k++) {
+         document.write("&nbsp"  );
+     }
+     for (k = 1; k <= i; k++) {
+         document.write("I");
+     }
+     document.write("<br>" );
+ }
+
+ document.write("<br>" );
+// rhs reverse triangle 
+ for (i = 1; i<=n ; i++) {
+   for ( k = 1; k<=i; k++) {
+       document.write("&nbsp"  );
+   }
+   for (k = i; k <= n; k++) {
+       document.write("I");
+   }
+   document.write("<br>" );
+}
+
+
+
+
+    </script>
+
+</body>
+
+</html>
