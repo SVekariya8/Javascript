@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+            animation-name: fanrotate;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .box {
+            height: 300px;
+            position: relative;
+
+
+        }
+
+        @keyframes fanrotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <img id=fan_img src="https://static-00.iconduck.com/assets.00/fan-icon-512x511-2gdsosli.png" alt=""
+            style="transform: rotate(30deg);">
+
+
+    </div>
+
+    <div> <button id="btn" onclick="onoff()"> on/off</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+    <script>
+        let onoff_btn = document.getElementById('btn')
+
+    </script>
+</body>
+
+</html>
